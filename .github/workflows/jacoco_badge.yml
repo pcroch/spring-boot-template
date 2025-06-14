@@ -1,4 +1,4 @@
-name: build
+name: jacoco_badge
 
 on:
   push:
