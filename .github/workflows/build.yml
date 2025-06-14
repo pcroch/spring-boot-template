@@ -21,5 +21,5 @@ jobs:
           distribution: 'adopt'
 
       - name: Build with Maven
-        run: mvn -B test
+        run: mvn -B clean install test
         
