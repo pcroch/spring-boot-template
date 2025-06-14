@@ -28,6 +28,5 @@ public class PingController {
         return ResponseEntity.status(HttpStatus.ACCEPTED)
                 .headers(headers)
                 .body(pingService.getPingBody());
-
     }
 }
