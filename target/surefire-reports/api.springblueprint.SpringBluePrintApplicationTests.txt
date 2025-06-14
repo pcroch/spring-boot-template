@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: api.springblueprint.SpringBluePrintApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.197 s - in api.springblueprint.SpringBluePrintApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.415 s - in api.springblueprint.SpringBluePrintApplicationTests
