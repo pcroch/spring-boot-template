@@ -1,8 +1,8 @@
 name: unit_test
 
 on:
-  push:
-    branches: [ pull_request ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
