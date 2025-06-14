@@ -10,7 +10,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @DisplayName("Unit Testing on Ping Service")
 class PingServiceTest {
-
     @InjectMocks
     private PingService pingService;
 
