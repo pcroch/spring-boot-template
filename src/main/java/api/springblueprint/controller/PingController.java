@@ -20,6 +20,11 @@ public class PingController {
         this.pingService = pingService;
     }
 
+
+
+
+
+
     @RequestMapping("/ping")
     @GetMapping(value = "/url", produces = "application/json")
     public ResponseEntity<String> getPing() {
