@@ -2,7 +2,7 @@ name: unit_test
 
 on:
   push:
-    branches: [ pull-request ]
+    branches: [ pull request ]
 
 jobs:
   build:
