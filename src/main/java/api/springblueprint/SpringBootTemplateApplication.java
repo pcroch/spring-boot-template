@@ -4,10 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBluePrintApplication {
+public class SpringBootTemplateApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBluePrintApplication.class, args);
+        SpringApplication.run(SpringBootTemplateApplication.class, args);
     }
 
 }
+
+
