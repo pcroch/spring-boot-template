@@ -1,27 +1,24 @@
 #server:
 #  port: 8080
 
-debug: false
 spring:
-  spring:
   datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/template-db
-    password: admin
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
     username: admin
-    testWhileIdle: true
-    schema: template-schema
-  flyway:
-    defaultSchema: template-schema
-    baseline-on-migrate: true
-    enabled: true
+    password: admin
+    driver-class-name: org.h2.Driver
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      # Hibernate ddl auto (create, create-drop, update): with "update" the database
-      # schema will be automatically updated accordingly to java entities found in
-      # the project
-      ddl-auto: update
+      ddl-auto: validate # Or update for quick development, but validate is safer for tests with Flyway
     properties:
       hibernate:
-        default_schema: template-schema
+        format_sql: true
+        use_sql_comments: true
+        # For H2 to behave more like PostgreSQL (if your prod DB is Postgres)
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: true
+    clean-disabled: false # Crucial for testing: allows flyway.clean()
+    baseline-on-migrate: true # Useful if you're managing an existing schema
+    # If your migration scripts are in a non-default location, specify here
+    # locations: classpath:db/migration
