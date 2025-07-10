@@ -1,5 +1,7 @@
 /target/
 /target/*
+target/
+target/*
 /.idea/
 /.idea/*
 /target/surefire-reports/api.springboottemplate.controller.PingControllerTest.txt
