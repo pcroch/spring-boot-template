@@ -8,7 +8,7 @@
 
 Create a db in Postgres with the following command:
 
-    psql -d address-book-db
+    psql -d db-template
 
 ** Build the app **
 
@@ -26,10 +26,9 @@ In case of conflict with a port you can change the default port 8080 to the desi
 
 ** Dummy Endpoint: **
 
-http://localhost:8080/ping/pingHere
+curl http://localhost:8080/pingController/ping
 
 ** Should respond: **
 
 pingController Ping
 
-curl http://localhost:8080/pingController/ping
