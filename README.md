@@ -10,47 +10,95 @@ Postgres is the db that is run locally in addition with flyway. To run the pipel
 
 ### Initial Set-up
 
-** Postgres **
+## Postgres
 
-If not installed check : https://wiki.archlinux.org/title/PostgreSQL
+*If not installed check : https://wiki.archlinux.org/title/PostgreSQL*
 
-Log to postgres:
+## Log to postgres:
 
     sudo -i -u postgres
 
-Create admin user name admin:
+## Create admin user name admin:
 
     createuser --interactive 
 
-Create a db in Postgres with the following command:
+## Create a db in Postgres with the following command:
     
     createdb db-template
 
-Check db:
+## Check db:
 
     psql -d db-template
 
 ### Spring Boot
 
-** Build the app **
+## Build the app **
 
     mvn clean install
 
-** Run the app **
+## Run the app **
 
     mvn spring-boot:run
 
-** Changing the port **
+## Changing the port **
 
 In case of conflict with a port you can change the default port 8080 to the desire one in the respecting yml file
 
 ### How to fetch:
 
-** Dummy Endpoint: **
+## Dummy Endpoint: **
 
     curl http://localhost:8080/v1/pingController/ping
 
-** Should respond: **
+## Should respond: **
 
     pingController Ping
 
+### Others
+
+## Getting the application tree
+
+    tree -L 5 /path-to-project/IdeaProjects/spring-boot-template/src
+
+## Would print out
+
+```
+├── main
+│   ├── java
+│   │   └── api
+│   │       ├── mywebapp
+│   │       │   ├── commun
+│   │       │   ├── config
+│   │       │   ├── controller
+│   │       │   ├── domain
+│   │       │   ├── dto
+│   │       │   ├── exception
+│   │       │   ├── mapper
+│   │       │   ├── repository
+│   │       │   ├── service
+│   │       │   └── utils
+│   │       └── SpringBootTemplateApplication.java
+│   └── resources
+│       ├── application.properties
+│       ├── application-test.yml
+│       ├── application.yml
+│       └── db 
+│           └── migration
+│               └── add_your-sql_file_here.txt
+└── test
+    └── java
+        └── api
+            ├── mywebapp
+            │   ├── commun
+            │   ├── config
+            │   ├── controller
+            │   ├── domain
+            │   ├── dto
+            │   ├── exception
+            │   ├── mapper
+            │   ├── repository
+            │   ├── service
+            │   └── utils
+            └── SpringBootTemplateApplicationTests.java
+
+```
