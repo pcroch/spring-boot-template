@@ -1,4 +1,4 @@
-package api.springblueprint;
+package api.springboottemplate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

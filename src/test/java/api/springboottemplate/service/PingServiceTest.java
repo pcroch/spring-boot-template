@@ -1,4 +1,4 @@
-package api.springblueprint.service;
+package api.springboottemplate.service;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,6 +1,6 @@
-package api.springblueprint.controller;
+package api.springboottemplate.controller;
 
-import api.springblueprint.service.PingService;
+import api.springboottemplate.service.PingService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

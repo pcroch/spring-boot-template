@@ -1,4 +1,4 @@
-package api.springblueprint.service;
+package api.springboottemplate.service;
 
 import org.springframework.stereotype.Service;
 

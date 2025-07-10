@@ -1,7 +1,8 @@
-package api.springblueprint;
+package api.springboottemplate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 
 @SpringBootApplication
 public class SpringBootTemplateApplication {
