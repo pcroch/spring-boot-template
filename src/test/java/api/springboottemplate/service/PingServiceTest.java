@@ -6,7 +6,7 @@ import org.mockito.InjectMocks;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
-//@ActiveProfiles
+//@ActiveProfiles("test")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @DisplayName("Unit Testing on Ping Service")
 class PingServiceTest {

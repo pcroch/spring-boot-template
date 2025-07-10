@@ -1,0 +1,27 @@
+#server:
+#  port: 8080
+
+debug: false
+spring:
+  spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/template-db
+    password: admin
+    username: admin
+    testWhileIdle: true
+    schema: template-schema
+  flyway:
+    defaultSchema: template-schema
+    baseline-on-migrate: true
+    enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      # Hibernate ddl auto (create, create-drop, update): with "update" the database
+      # schema will be automatically updated accordingly to java entities found in
+      # the project
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: template-schema
