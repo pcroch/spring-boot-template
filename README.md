@@ -6,7 +6,21 @@
 
 ** Postgres **
 
+If not installed check : https://wiki.archlinux.org/title/PostgreSQL
+
+Log to postgres:
+
+    sudo -i -u postgres
+
+Create admin user name admin:
+
+    createuser --interactive 
+
 Create a db in Postgres with the following command:
+    
+    createdb db-template
+
+Check db:
 
     psql -d db-template
 
@@ -16,7 +30,7 @@ Create a db in Postgres with the following command:
 
 ** Run the app **
 
-    mvn clean spring-boot:run
+    mvn spring-boot:run
 
 ** Changing the port **
 

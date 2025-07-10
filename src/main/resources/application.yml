@@ -1,23 +1,23 @@
 server:
   port: 8080
- ## IF a DB is needed: config file and uncommented in POM.XML
+
 spring:
   properties:
     hibernate:
       globally_quoted_identifiers: true
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/spring-blue-print
+    url: jdbc:postgresql://localhost:5432/template-db
     password: admin
     username: admin
     #    testOnBorrow: true
     #    testWhileIdle: true
-    schema: db-template
+    schema: template-schema
   #    hikari:
   #      maximum-pool-size: 5
   #      idle-timeout: 600000
   flyway:
-    defaultSchema: template
+    defaultSchema: template-schema
     baseline-on-migrate: true
     enabled: true
   jpa:
@@ -31,4 +31,4 @@ spring:
     properties:
       hibernate:
         #        format_sql: false
-        default_schema: template
+        default_schema: template-schema
