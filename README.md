@@ -32,25 +32,25 @@ Postgres is the db that is run locally in addition with flyway. To run the pipel
 
 ### Spring Boot
 
-## Build the app **
+## Build the app
 
     mvn clean install
 
-## Run the app **
+## Run the app
 
     mvn spring-boot:run
 
-## Changing the port **
+## Changing the port
 
 In case of conflict with a port you can change the default port 8080 to the desire one in the respecting yml file
 
 ### How to fetch:
 
-## Dummy Endpoint: **
+## Dummy Endpoint:
 
     curl http://localhost:8080/v1/pingController/ping
 
-## Should respond: **
+## Should respond:
 
     pingController Ping
 
