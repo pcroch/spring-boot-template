@@ -2,6 +2,10 @@
 
 [![.github/workflows/maven.yml](https://github.com/pcroch/spring-security/actions/workflows/build.yml/badge.svg)](https://github.com/pcroch/spring-security/actions/workflows/build.yml)
 
+### Description 
+
+This is a default project to have a fast start when I want to develop something on spring boot
+
 ### Initial Set-up
 
 ** Postgres **
