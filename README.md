@@ -2,13 +2,13 @@
 
 [![.github/workflows/maven.yml](https://github.com/pcroch/spring-security/actions/workflows/build.yml/badge.svg)](https://github.com/pcroch/spring-security/actions/workflows/build.yml)
 
-### Description 
+# Description
 
 This is a default project to have a fast start when I want to develop something on spring boot
 
 Postgres is the db that is run locally in addition with flyway. To run the pipeline, h2 is used
 
-### Initial Set-up
+# Initial Set-up
 
 ## Postgres
 
@@ -54,9 +54,9 @@ In case of conflict with a port you can change the default port 8080 to the desi
 
     pingController Ping
 
-### Others
+# Others
 
-## Getting the application tree
+### Getting the application tree
 
 *with depth limit and with files*
 
