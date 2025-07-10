@@ -24,6 +24,8 @@ Check db:
 
     psql -d db-template
 
+### Spring Boot
+
 ** Build the app **
 
     mvn clean install
