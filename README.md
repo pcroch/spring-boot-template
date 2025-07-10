@@ -6,6 +6,8 @@
 
 This is a default project to have a fast start when I want to develop something on spring boot
 
+Postgres is the db that is run locally in addition with flyway. To run the pipeline, h2 is used
+
 ### Initial Set-up
 
 ** Postgres **
