@@ -1,6 +1,35 @@
-[![Coverage](.github/badges/jacoco.svg)](https://github.com/pcroch/spring-security/actions/workflows/jacoco_badge.yml)
-
-[![Coverage](.github/badges/branches.svg)](https://github.com/pcroch/spring-security/actions/workflows/jacoco_badge.yml)
-
+[![Coverage](.github/badges/jacoco.svg)](https://github.com/pcroch/spring-security/actions/workflows/jacoco_badge.yml) [![Coverage](.github/badges/branches.svg)](https://github.com/pcroch/spring-security/actions/workflows/jacoco_badge.yml)
 
 [![.github/workflows/maven.yml](https://github.com/pcroch/spring-security/actions/workflows/build.yml/badge.svg)](https://github.com/pcroch/spring-security/actions/workflows/build.yml)
+
+### Initial Set-up
+
+** Postgres **
+
+Create a db in Postgres with the following command:
+
+    psql -d address-book-db
+
+** Build the app **
+
+    mvn clean install
+
+** Run the app **
+
+    mvn clean spring-boot:run
+
+** Changing the port **
+
+In case of conflict with a port you can change the default port 8080 to the desire one in the respecting yml file
+
+### How to fetch:
+
+** Dummy Endpoint: **
+
+http://localhost:8080/ping/pingHere
+
+** Should respond: **
+
+pingController Ping
+
+curl http://localhost:8080/pingController/ping
