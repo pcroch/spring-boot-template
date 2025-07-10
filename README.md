@@ -48,9 +48,9 @@ In case of conflict with a port you can change the default port 8080 to the desi
 
 ** Dummy Endpoint: **
 
-curl http://localhost:8080/pingController/ping
+    curl http://localhost:8080/v1/pingController/ping
 
 ** Should respond: **
 
-pingController Ping
+    pingController Ping
 
